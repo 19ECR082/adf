@@ -1,0 +1,25 @@
+{
+	"name": "trigger_event",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "scheduler",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/demoadf/blobs/source/source_folder",
+			"blobPathEndsWith": ".txt",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/6ca6cbbe-942a-4c3a-8ea2-06c11e8177f4/resourceGroups/azure-datafactory/providers/Microsoft.Storage/storageAccounts/demoadfstoragedata",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
