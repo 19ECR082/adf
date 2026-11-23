@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "azure-data-factory-ban"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://demoadfstoragedata.dfs.core.windows.net/"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "demo-data-adf.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "demo-sql-db"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "adf-admin"
+		},
+		"trigger_event_properties_typeProperties_scope": {
+			"value": "/subscriptions/6ca6cbbe-942a-4c3a-8ea2-06c11e8177f4/resourceGroups/azure-datafactory/providers/Microsoft.Storage/storageAccounts/demoadfstoragedata"
+		}
+	}
+}
